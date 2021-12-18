@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="Name">Name<sup class="text-danger">*</sup></label>
+          <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <input type="text" class="form-control" id="Name" />
+              <small id="nameHint" class="form-text text-muted">First</small>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <input type="text" class="form-control" id="lastName" />
+              <small id="nameHint" class="form-text text-muted">Last</small>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="email">Email<sup class="text-danger">*</sup></label>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <input type="email" class="form-control" id="email" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="experience"
+            >Experience<sup class="text-danger">*</sup></label
+          >
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <div class="row">
+                <div class="col-1">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label
+            >Overall, How would you rate your experience with us?<sup
+              class="text-danger"
+              >*</sup
+            ></label
+          >
+        </div>
+        <br />
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-12 d-none d-md-block">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <div class="text-center">Very Unsatisfied</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Unsatisfied</div>
+                    </th>
+                    <th scope="col"><div class="text-center">Neutral</div></th>
+                    <th scope="col">
+                      <div class="text-center">Satisfied</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Very Satisfied</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Purchase</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="purchase" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="purchase"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="purchase"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="purchase"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="purchase"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Service</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Service" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Service" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Service" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Service" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Service" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Company Overall</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="Company OverAll"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Company OverAll"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Company OverAll"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Company OverAll"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Company OverAll"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-12 d-block d-md-none">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <div class="text-center">Purchase</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Service</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Company Overall</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Very Unsatisfied</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="VeryUnsatisfied"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryUnsatisfied"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryUnsatisfied"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Unsatisfied</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="Unsatisfied"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Unsatisfied"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Unsatisfied"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Neutral</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Neutral" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Neutral" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Neutral" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Satisfied</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Satisfied" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Satisfied"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Satisfied"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Very Satisfied</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="Very Satisfied"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Very Satisfied"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Very Satisfied"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label>How likely are you to?<sup class="text-danger">*</sup></label>
+        </div>
+        <br />
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-12 d-none d-md-block">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <div class="text-center">Very Unlikely</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Unlikely</div>
+                    </th>
+                    <th scope="col"><div class="text-center">Neutral</div></th>
+                    <th scope="col">
+                      <div class="text-center">Likely</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">Very likely</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Buy from us again</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="BuyFromUsAgain"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="BuyFromUsAgain"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="BuyFromUsAgain"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="BuyFromUsAgain"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="BuyFromUsAgain"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Recommend our products to others</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="RecommendOurProducts"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurProducts"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurProducts"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurProducts"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurProducts"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Recommend our company to others</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="RecommendOurCompany"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurCompany"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurCompany"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurCompany"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="RecommendOurCompany"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-12 d-block d-md-none">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <div class="text-center">Buy from us again</div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">
+                        Recommend our products to others
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="text-center">
+                        Recommend our company to others
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Very Unlikely</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="VeryUnlikely"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryUnlikely"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryUnlikely"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Unlikely</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Unlikely" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Unlikely"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="Unlikely"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Neutral</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Neutral" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Neutral" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Neutral" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Likely</th>
+                    <td class="d-flex justify-content-center">
+                      <input type="radio" class="form-check" name="Likely" />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Likely" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input type="radio" class="form-check" name="Likely" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Very Likely</th>
+                    <td class="d-flex justify-content-center">
+                      <input
+                        type="radio"
+                        class="form-check"
+                        name="VeryLikely"
+                      />
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryLikely"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <input
+                          type="radio"
+                          class="form-check"
+                          name="VeryLikely"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="additionalComments"
+            >Additional comments or suggestions</label
+          >
+          <textarea
+            class="form-control"
+            id="additionalComments"
+            rows="4"
+          ></textarea>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
